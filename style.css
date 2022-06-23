@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --orange:#FFD369;
+  --mainColor: #222831;
+}
+
+body {
+    font-family: 'Finger Paint', cursive;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh ;
+}
+.game {
+    color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game h1 {
+    font-size: 45px;
+    padding: 20px 0;
+}
+.game h1 span {
+    color: #FA7E0A;
+    font-size: 55px;
+}
+.game  button {
+    font-family: 'Finger Paint', cursive;
+    color:var(--mainColor) ;
+    background-color:var(--orange) ;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.game button:hover {
+    padding: 5px 30px;
+}
+
+.game .container {
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3px;
+    background-color: var(--orange);
+    margin-top: 30px;
+
+}
+
+.game .container .square {
+    background-color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.game .container .square:hover {
+    background-color:#171c22 ;
+}
+
+
